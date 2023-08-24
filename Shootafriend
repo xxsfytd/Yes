@@ -1,1 +1,28 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "Title of the library", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
+local Tab = Window:MakeTab({
+	Name = "Main",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "Auto"
+})
+
+Tab:AddToggle({
+	Name = "Auto Train",
+	Default = false,
+	Callback = function(Value)
+		_G.autoTrain = Value
+  while _G.autoTrain and wait() do
+local args = {
+    [1] = Vector3.new(3353.279296875, -62.2852668762207, -1983.1761474609375),
+    [2] = "Target15_4"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Fire"):FireServer(unpack(args))
+end
+	end    
+})
