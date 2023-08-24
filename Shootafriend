@@ -26,3 +26,18 @@ game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Fire"
 end
 	end    
 })
+
+Tab:AddToggle({
+	Name = "Auto Rebirth",
+	Default = false,
+	Callback = function(Value)
+		_G.autoRebirth = Value
+  while _G.autoRebirth and wait(5) do
+local args = {
+    [1] = "Rebirth"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("ReplicateGui"):FireServer(unpack(args))
+end
+	end    
+})
