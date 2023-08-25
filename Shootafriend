@@ -1,69 +1,185 @@
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))() 
- local Window = OrionLib:MakeWindow({Name = "Shoot A Friend", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"}) 
-  
- local Tab = Window:MakeTab({ 
-         Name = "Main", 
-         Icon = "rbxassetid://4483345998", 
-         PremiumOnly = false 
- }) 
-  
- local Section = Tab:AddSection({ 
-         Name = "Auto" 
- }) 
-  
- Tab:AddToggle({ 
-         Name = "Auto Train", 
-         Default = false, 
-         Callback = function(Value) 
-                 _G.autoTrain = Value 
-   while _G.autoTrain and wait(0.005) do 
- local args = { 
-     [1] = Vector3.new(3353.279296875, -62.2852668762207, -1983.1761474609375), 
-     [2] = "Target15_4" 
- } 
-  
- game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Fire"):FireServer(unpack(args)) 
- end 
-         end     
- }) 
-  
- Tab:AddToggle({ 
-         Name = "Auto Rebirth", 
-         Default = false, 
-         Callback = function(Value) 
-                 _G.autoRebirth = Value 
-   while _G.autoRebirth and wait(5) do 
- local args = { 
-     [1] = "Rebirth" 
- } 
-  
- game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("ReplicateGui"):FireServer(unpack(args)) 
- end 
-         end     
- }) 
-  
- local Section = Tab:AddSection({ 
-         Name = "Eggs" 
- }) 
-  
- Tab:AddToggle({ 
-         Name = "Forest Egg", 
-         Default = false, 
-         Callback = function(Value) 
-                 _G.autoForestEgg = Value 
-   while _G.autoForestEgg and wait() do 
- local args = { 
-     [1] = "Single", 
-     [2] = "Forest Egg" 
- } 
-  
- game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("ReplicateEgg"):FireServer(unpack(args)) 
- end 
-         end     
- }) 
-  
-  
-  
-  
-  
- OrionLib:Init()
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "Shoot A Friend", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+local Tab = Window:MakeTab({
+	Name = "Main",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "Auto"
+})
+
+Tab:AddToggle({
+	Name = "Auto Train",
+	Default = false,
+	Callback = function(Value)
+		_G.autoTrain = Value
+  while _G.autoTrain and wait(0.005) do
+local args = {
+    [1] = Vector3.new(3353.279296875, -62.2852668762207, -1983.1761474609375),
+    [2] = "Target15_4"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Fire"):FireServer(unpack(args))
+end
+	end    
+})
+
+Tab:AddToggle({
+	Name = "Auto Rebirth",
+	Default = false,
+	Callback = function(Value)
+		_G.autoRebirth = Value
+  while _G.autoRebirth and wait(5) do
+local args = {
+    [1] = "Rebirth"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("ReplicateGui"):FireServer(unpack(args))
+end
+	end    
+})
+
+local Section = Tab:AddSection({
+	Name = "Gifts"
+})
+
+Tab:AddToggle({
+	Name = "Auto Claim Gift",
+	Default = false,
+	Callback = function(Value)
+		_G.autoGiftClaim = Value
+  while _G.autoGiftClaim and wait() do
+local args = {
+    [1] = "SessionClaim",
+    [2] = 1
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("ReplicateGui"):FireServer(unpack(args))
+
+local args = {
+    [1] = "SessionClaim",
+    [2] = 2
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("ReplicateGui"):FireServer(unpack(args))
+
+local args = {
+    [1] = "SessionClaim",
+    [2] = 3
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("ReplicateGui"):FireServer(unpack(args))
+
+local args = {
+    [1] = "SessionClaim",
+    [2] = 4
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("ReplicateGui"):FireServer(unpack(args))
+
+local args = {
+    [1] = "SessionClaim",
+    [2] = 5
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("ReplicateGui"):FireServer(unpack(args))
+
+local args = {
+    [1] = "SessionClaim",
+    [2] = 6
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("ReplicateGui"):FireServer(unpack(args))
+
+local args = {
+    [1] = "SessionClaim",
+    [2] = 7
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("ReplicateGui"):FireServer(unpack(args))
+
+local args = {
+    [1] = "SessionClaim",
+    [2] = 8
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("ReplicateGui"):FireServer(unpack(args))
+
+local args = {
+    [1] = "SessionClaim",
+    [2] = 9
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("ReplicateGui"):FireServer(unpack(args))
+
+local args = {
+    [1] = "SessionClaim",
+    [2] = 10
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("ReplicateGui"):FireServer(unpack(args))
+
+local args = {
+    [1] = "SessionClaim",
+    [2] = 11
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("ReplicateGui"):FireServer(unpack(args))
+
+local args = {
+    [1] = "SessionClaim",
+    [2] = 12
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("ReplicateGui"):FireServer(unpack(args))
+end
+	end    
+})
+
+local Section = Tab:AddSection({
+	Name = "Eggs"
+})
+
+Tab:AddToggle({
+	Name = "Forest Egg",
+	Default = false,
+	Callback = function(Value)
+		_G.autoForestEgg = Value
+  while _G.autoForestEgg and wait() do
+local args = {
+    [1] = "Single",
+    [2] = "Forest Egg"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("ReplicateEgg"):FireServer(unpack(args))
+end
+	end    
+})
+
+Tab:AddToggle({
+	Name = "Autumn Egg",
+	Default = false,
+	Callback = function(Value)
+		_G.autoAutumnEgg = Value
+  while _G.autoAutumnEgg and wait() do
+local args = {
+    [1] = "Single",
+    [2] = "Autumn Egg"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("ReplicateEgg"):FireServer(unpack(args))
+end
+	end    
+})
+
+
+
+
+
+
+
+OrionLib:Init()
+
