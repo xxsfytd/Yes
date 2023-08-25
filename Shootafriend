@@ -41,3 +41,29 @@ game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Repli
 end
 	end    
 })
+
+local Section = Tab:AddSection({
+	Name = "Eggs"
+})
+
+Tab:AddToggle({
+	Name = "Forest Egg",
+	Default = false,
+	Callback = function(Value)
+		_G.autoForestEgg = Value
+  while _G.autoForestEgg and wait() do
+local args = {
+    [1] = "Single",
+    [2] = "Forest Egg"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("ReplicateEgg"):FireServer(unpack(args))
+end
+	end    
+})
+
+
+
+
+
+OrionLib:Init()
