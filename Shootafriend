@@ -16,7 +16,7 @@ Tab:AddToggle({
 	Default = false,
 	Callback = function(Value)
 		_G.autoTrain = Value
-  while _G.autoTrain and wait(1) do
+  while _G.autoTrain and wait(0.1) do
 local args = {
     [1] = Vector3.new(3353.279296875, -62.2852668762207, -1983.1761474609375),
     [2] = "Target15_4"
