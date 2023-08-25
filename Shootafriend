@@ -41,3 +41,101 @@ game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Repli
 end
 	end    
 })
+
+local Section = Tab:AddSection({
+	Name = "Gifts"
+})
+
+Tab:AddToggle({
+	Name = "Auto Claim Gift",
+	Default = false,
+	Callback = function(Value)
+		_G.autoGiftClaim = Value
+  while _G.autoGiftClaim and wait() do
+local args = {
+    [1] = "SessionClaim",
+    [2] = 1
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("ReplicateGui"):FireServer(unpack(args))
+
+local args = {
+    [1] = "SessionClaim",
+    [2] = 2
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("ReplicateGui"):FireServer(unpack(args))
+
+local args = {
+    [1] = "SessionClaim",
+    [2] = 3
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("ReplicateGui"):FireServer(unpack(args))
+
+local args = {
+    [1] = "SessionClaim",
+    [2] = 4
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("ReplicateGui"):FireServer(unpack(args))
+
+local args = {
+    [1] = "SessionClaim",
+    [2] = 5
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("ReplicateGui"):FireServer(unpack(args))
+
+local args = {
+    [1] = "SessionClaim",
+    [2] = 6
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("ReplicateGui"):FireServer(unpack(args))
+
+local args = {
+    [1] = "SessionClaim",
+    [2] = 7
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("ReplicateGui"):FireServer(unpack(args))
+
+local args = {
+    [1] = "SessionClaim",
+    [2] = 8
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("ReplicateGui"):FireServer(unpack(args))
+
+local args = {
+    [1] = "SessionClaim",
+    [2] = 9
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("ReplicateGui"):FireServer(unpack(args))
+
+local args = {
+    [1] = "SessionClaim",
+    [2] = 10
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("ReplicateGui"):FireServer(unpack(args))
+
+local args = {
+    [1] = "SessionClaim",
+    [2] = 11
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("ReplicateGui"):FireServer(unpack(args))
+
+local args = {
+    [1] = "SessionClaim",
+    [2] = 12
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("ReplicateGui"):FireServer(unpack(args))
+end
+	end    
+})
+
