@@ -175,6 +175,214 @@ end
 	end    
 })
 
+Tab:AddToggle({
+	Name = "Winter Egg",
+	Default = false,
+	Callback = function(Value)
+		_G.autoWinterEgg = Value
+  while _G.autoWinterEgg and wait() do
+local args = {
+    [1] = "Single",
+    [2] = "Winter Egg"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("ReplicateEgg"):FireServer(unpack(args))
+end
+	end    
+})
+
+Tab:AddToggle({
+	Name = "Dessert Egg",
+	Default = false,
+	Callback = function(Value)
+		_G.autoDessertEgg = Value
+  while _G.autoDessertEgg and wait() do
+local args = {
+    [1] = "Single",
+    [2] = "Desert Egg"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("ReplicateEgg"):FireServer(unpack(args))
+end
+	end    
+})
+
+Tab:AddToggle({
+	Name = "Tropical Egg",
+	Default = false,
+	Callback = function(Value)
+		_G.autoTropicalEgg = Value
+  while _G.autoTropicalEgg and wait() do
+local args = {
+    [1] = "Single",
+    [2] = "Tropical Egg"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("ReplicateEgg"):FireServer(unpack(args))
+end
+	end    
+})
+
+Tab:AddToggle({
+	Name = "School Egg",
+	Default = false,
+	Callback = function(Value)
+		_G.autoSchoolEgg = Value
+  while _G.autoSchoolEgg and wait() do
+local args = {
+    [1] = "Single",
+    [2] = "School Egg"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("ReplicateEgg"):FireServer(unpack(args))
+end
+	end    
+})
+
+Tab:AddToggle({
+	Name = "House Egg",
+	Default = false,
+	Callback = function(Value)
+		_G.autoHouseEgg = Value
+  while _G.autoHouseEgg and wait() do
+local args = {
+    [1] = "Single",
+    [2] = "House Egg"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("ReplicateEgg"):FireServer(unpack(args))
+end
+	end    
+})
+
+Tab:AddToggle({
+	Name = "Candy Egg",
+	Default = false,
+	Callback = function(Value)
+		_G.autoCandyEgg = Value
+  while _G.autoCandyEgg and wait() do
+local args = {
+    [1] = "Single",
+    [2] = "Candy Egg"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("ReplicateEgg"):FireServer(unpack(args))
+end
+	end    
+})
+
+Tab:AddToggle({
+	Name = "Town Egg",
+	Default = false,
+	Callback = function(Value)
+		_G.autoTownEgg = Value
+  while _G.autoTownEgg and wait() do
+local args = {
+    [1] = "Single",
+    [2] = "Town Egg"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("ReplicateEgg"):FireServer(unpack(args))
+end
+	end    
+})
+
+Tab:AddToggle({
+	Name = "Camping Egg",
+	Default = false,
+	Callback = function(Value)
+		_G.autoCampingEgg = Value
+  while _G.autoCampingEgg and wait() do
+local args = {
+    [1] = "Single",
+    [2] = "Camping Egg"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("ReplicateEgg"):FireServer(unpack(args))
+end
+	end    
+})
+
+Tab:AddToggle({
+	Name = "Pirate Egg",
+	Default = false,
+	Callback = function(Value)
+		_G.autoPirateEgg = Value
+  while _G.autoPirateEgg and wait() do
+local args = {
+    [1] = "Single",
+    [2] = "Pirate Egg"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("ReplicateEgg"):FireServer(unpack(args))
+end
+	end    
+})
+
+Tab:AddToggle({
+	Name = "Summer Egg",
+	Default = false,
+	Callback = function(Value)
+		_G.autoSummerEgg = Value
+  while _G.autoSummerEgg and wait() do
+local args = {
+    [1] = "Single",
+    [2] = "Summer Egg"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("ReplicateEgg"):FireServer(unpack(args))
+end
+	end    
+})
+
+Tab:AddToggle({
+	Name = "Sakura Egg",
+	Default = false,
+	Callback = function(Value)
+		_G.autoSakuraEgg = Value
+  while _G.autoSakuraEgg and wait() do
+local args = {
+    [1] = "Single",
+    [2] = "Sakura Egg"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("ReplicateEgg"):FireServer(unpack(args))
+end
+	end    
+})
+
+Tab:AddToggle({
+	Name = "Suede Egg",
+	Default = false,
+	Callback = function(Value)
+		_G.autoSuedeEgg = Value
+  while _G.autoSuedeEgg and wait() do
+local args = {
+    [1] = "Single",
+    [2] = "Suede Egg"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("ReplicateEgg"):FireServer(unpack(args))
+end
+	end    
+})
+
+Tab:AddToggle({
+	Name = "Magma Egg",
+	Default = false,
+	Callback = function(Value)
+		_G.autoMagmaEgg = Value
+  while _G.autoMagmaEgg and wait() do
+local args = {
+    [1] = "Single",
+    [2] = "Magma Egg"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("ReplicateEgg"):FireServer(unpack(args))
+end
+	end    
+})
+
 
 
 
